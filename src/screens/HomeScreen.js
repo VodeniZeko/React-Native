@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Button, TouchableOpacity, Text, StyleSheet } from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = props => {
+  const nav = props.navigation.navigate;
   return (
     <View>
       <Text style={styles.text}>Welcome to my app</Text>
@@ -11,10 +12,18 @@ const HomeScreen = () => {
         }}
         title="button"
       />
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          nav("List");
+        }}
+      >
         <Text style={styles.buttonText}>see Friends</Text>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          nav("Images");
+        }}
+      >
         <Text style={styles.buttonText}>see Images</Text>
       </TouchableOpacity>
     </View>

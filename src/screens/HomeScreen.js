@@ -40,6 +40,13 @@ const HomeScreen = props => {
       >
         <Text style={styles.buttonText}>go add colors</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          nav("Text");
+        }}
+      >
+        <Text style={styles.buttonText}>go to text screen</Text>
+      </TouchableOpacity>
     </View>
   );
 };

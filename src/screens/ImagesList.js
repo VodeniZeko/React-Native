@@ -7,12 +7,15 @@ const FriendList = () => {
     <View>
       <ImageDetails
         title="forest"
-        source={require("../../assets/forest.jpg")}
+        imgSource={require("../../assets/forest.jpg")}
       />
-      <ImageDetails title="beach" source={require("../../assets/beach.jpg")} />
+      <ImageDetails
+        title="beach"
+        imgSource={require("../../assets/beach.jpg")}
+      />
       <ImageDetails
         title="mountain"
-        source={require("../../assets/mountain.jpg")}
+        imgSource={require("../../assets/mountain.jpg")}
       />
     </View>
   );

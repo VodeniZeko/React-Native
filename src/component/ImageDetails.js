@@ -7,11 +7,11 @@ const styles = StyleSheet.create({
     fontWeight: "bold"
   }
 });
-const ImageDetails = ({ title, source }) => {
+const ImageDetails = ({ title, imgSource }) => {
   return (
     <View>
       <Text style={styles.text}>{title}</Text>
-      <Image source={source} />
+      <Image source={imgSource} />
     </View>
   );
 };

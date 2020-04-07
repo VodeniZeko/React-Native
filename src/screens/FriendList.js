@@ -1,5 +1,5 @@
 import React from "react";
-import { View, FlatList, Text, StyleSheet } from "react-native";
+import { FlatList, Text, StyleSheet } from "react-native";
 
 const FriendList = () => {
   const friends = [
@@ -26,9 +26,6 @@ const FriendList = () => {
   return (
     <FlatList
       showsVerticalScrollIndicator={false}
-      keyExtractor={each => {
-        each.name;
-      }}
       data={friends}
       renderItem={({ item }) => {
         return (
@@ -37,6 +34,9 @@ const FriendList = () => {
             {item.age} <Text style={styles.text}> old. </Text>{" "}
           </Text>
         );
+      }}
+      keyExtractor={each => {
+        each.name;
       }}
     />
   );

@@ -26,6 +26,13 @@ const HomeScreen = props => {
       >
         <Text style={styles.buttonText}>see Images</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          nav("Counter");
+        }}
+      >
+        <Text style={styles.buttonText}>go count</Text>
+      </TouchableOpacity>
     </View>
   );
 };

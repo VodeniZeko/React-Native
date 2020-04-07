@@ -1,6 +1,6 @@
 import React from "react";
 import ImageDetails from "../component/ImageDetails";
-import { View, Button, TouchableOpacity, Text, StyleSheet } from "react-native";
+import { View } from "react-native";
 
 const FriendList = () => {
   return (

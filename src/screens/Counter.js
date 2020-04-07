@@ -8,13 +8,13 @@ const Counter = () => {
       <Button
         title="increase"
         onPress={() => {
-          setCount(count++);
+          setCount(count + 1);
         }}
       />
       <Button
         title="decrease"
         onPress={() => {
-          setCount(count--);
+          setCount(count - 1);
         }}
       />
       <Text style={style.text}>Current count: </Text>

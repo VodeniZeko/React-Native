@@ -11,6 +11,12 @@ const HomeScreen = () => {
         }}
         title="button"
       />
+      <TouchableOpacity>
+        <Text style={styles.buttonText}>see Friends</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={styles.buttonText}>see Images</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -19,6 +25,11 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     textAlign: "center"
+  },
+  buttonText: {
+    color: "blue",
+    textAlign: "center",
+    padding: 5
   }
 });
 

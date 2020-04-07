@@ -33,6 +33,13 @@ const HomeScreen = props => {
       >
         <Text style={styles.buttonText}>go count</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          nav("Colors");
+        }}
+      >
+        <Text style={styles.buttonText}>go add colors</Text>
+      </TouchableOpacity>
     </View>
   );
 };

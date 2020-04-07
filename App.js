@@ -5,13 +5,16 @@ import FriendList from "./src/screens/FriendList";
 import ImagesList from "./src/screens/ImagesList";
 import Counter from "./src/screens/Counter";
 import ColorScreen from "./src/screens/ColorScreen";
+import TextScreen from "./src/screens/TextScreen";
+
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     List: FriendList,
     Images: ImagesList,
     Counter: Counter,
-    Colors: ColorScreen
+    Colors: ColorScreen,
+    Text: TextScreen
   },
   {
     initialRouteName: "Home",

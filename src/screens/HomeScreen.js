@@ -1,13 +1,24 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { View, Button, TouchableOpacity, Text, StyleSheet } from "react-native";
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>HomeScreen</Text>;
+  return (
+    <View>
+      <Text style={styles.text}>Welcome to my app</Text>
+      <Button
+        onPress={() => {
+          alert("no no no");
+        }}
+        title="button"
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: "center"
   }
 });
 

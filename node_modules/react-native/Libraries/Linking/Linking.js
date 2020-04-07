@@ -100,11 +100,7 @@ class Linking extends NativeEventEmitter {
    */
   sendIntent(
     action: string,
-    extras?: Array<{
-      key: string,
-      value: string | number | boolean,
-      ...
-    }>,
+    extras?: Array<{key: string, value: string | number | boolean}>,
   ): Promise<void> {
     if (Platform.OS === 'android') {
       return NativeLinking.sendIntent(action, extras);

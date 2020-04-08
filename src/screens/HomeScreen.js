@@ -47,6 +47,13 @@ const HomeScreen = props => {
       >
         <Text style={styles.buttonText}>go to text screen</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          nav("Box");
+        }}
+      >
+        <Text style={styles.buttonText}>go to Box screen </Text>
+      </TouchableOpacity>
     </View>
   );
 };
